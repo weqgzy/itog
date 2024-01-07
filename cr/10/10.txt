@@ -1,0 +1,58 @@
+mysql> USE human_friends;
+
+Reading table information for completion of table and column names
+
+You can turn off this feature to get a quicker startup with -A
+
+
+
+Database changed
+
+mysql> CREATE TEMPORARY TABLE id_animals SELECT a.id FROM camels AS c JOIN pack_animals p ON c.id_pack_animal = p.id JOIN animals a ON p.id_animal = a.id;
+
+Query OK, 3 rows affected (0,01 sec)
+
+Records: 3  Duplicates: 0  Warnings: 0
+
+
+
+mysql> DELETE FROM camels;
+
+Query OK, 3 rows affected (0,00 sec)
+
+
+
+mysql> DELETE FROM commands WHERE commands.id_animal IN (SELECT id FROM id_animals);
+
+Query OK, 3 rows affected (0,00 sec)
+
+
+
+mysql> DELETE FROM pack_animals WHERE pack_animals.id_animal IN (SELECT id FROM id_animals);
+
+Query OK, 3 rows affected (0,01 sec)
+
+
+
+mysql> DELETE FROM animals WHERE animals.id IN (SELECT id FROM id_animals);
+
+Query OK, 3 rows affected (0,00 sec)
+
+
+
+mysql> DROP TEMPORARY TABLE id_animals;
+
+Query OK, 0 rows affected (0,01 sec)
+
+
+
+mysql> 
+
+mysql> 
+
+mysql> CREATE TABLE h_and_d SELECT id_pack_animal FROM horses UNION SELECT id_pack_animal FROM donkeys;
+
+Query OK, 5 rows affected (0,03 sec)
+
+Records: 5  Duplicates: 0  Warnings: 0
+

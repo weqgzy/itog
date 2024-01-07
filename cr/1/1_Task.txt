@@ -1,0 +1,56 @@
+user1@user1-VirtualBox:~$ cat > pets
+
+dogs
+
+cats
+
+hamsters
+
+^C
+
+user1@user1-VirtualBox:~$ cat > pack
+
+horses
+
+camels
+
+donkeys
+
+^C
+
+user1@user1-VirtualBox:~$ cat pets pack > new
+
+user1@user1-VirtualBox:~$ cat new
+
+dogs
+
+cats
+
+hamsters
+
+horses
+
+camels
+
+donkeys
+
+user1@user1-VirtualBox:~$ mv new human_friends
+
+user1@user1-VirtualBox:~$ cat human_friends
+
+dogs
+
+cats
+
+hamsters
+
+horses
+
+camels
+
+donkeys
+
+user1@user1-VirtualBox:~$ 
+
+
+

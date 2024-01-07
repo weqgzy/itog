@@ -1,0 +1,28 @@
+mysql> CREATE TABLE young SELECT *, TIMESTAMPDIFF(MONTH, birthday, CURDATE()) FROM animals WHERE TIMESTAMPDIFF(MONTH, birthday, CURDATE()) > 12 AND TIMESTAMPDIFF(MONTH, birthday, CURDATE()) < 36;
+
+Query OK, 4 rows affected (0,02 sec)
+
+Records: 4  Duplicates: 0  Warnings: 0
+
+
+
+mysql> SELECT * FROM young;
+
++----+----------+------------+-------------------------------------------+
+
+| id | name     | birthday   | TIMESTAMPDIFF(MONTH, birthday, CURDATE()) |
+
++----+----------+------------+-------------------------------------------+
+
+|  2 | Cat1     | 2021-02-02 |                                        35 |
+
+|  3 | Cat2     | 2022-02-02 |                                        23 |
+
+| 15 | Hamster2 | 2022-12-02 |                                        13 |
+
+| 18 | Donkey3  | 2021-09-13 |                                        27 |
+
++----+----------+------------+-------------------------------------------+
+
+4 rows in set (0,00 sec)
+

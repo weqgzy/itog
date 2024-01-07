@@ -1,0 +1,264 @@
+mysql> USE human_friends;
+
+Reading table information for completion of table and column names
+
+You can turn off this feature to get a quicker startup with -A
+
+
+
+Database changed
+
+mysql> SELECT * FROM animals;
+
++----+----------+------------+
+
+| id | name     | birthday   |
+
++----+----------+------------+
+
+|  1 | Dog1     | 2020-02-02 |
+
+|  2 | Cat1     | 2021-02-02 |
+
+|  3 | Cat2     | 2022-02-02 |
+
+|  4 | Camel1   | 2023-02-02 |
+
+|  5 | Dog2     | 2020-01-02 |
+
+|  6 | Donkey1  | 2020-02-01 |
+
+|  7 | Cat3     | 2019-02-02 |
+
+|  8 | Dog3     | 2018-02-02 |
+
+|  9 | Camel2   | 2017-02-02 |
+
+| 10 | Camel3   | 2016-02-02 |
+
+| 11 | Donkey2  | 2015-02-02 |
+
+| 12 | Horse1   | 2021-01-01 |
+
+| 13 | Horse2   | 2022-12-12 |
+
+| 14 | Hamster1 | 2020-04-22 |
+
+| 15 | Hamster2 | 2022-12-02 |
+
+| 16 | Dog4     | 2023-06-05 |
+
+| 17 | Hamster3 | 2012-12-12 |
+
+| 18 | Donkey3  | 2021-09-13 |
+
++----+----------+------------+
+
+18 rows in set (0,00 sec)
+
+
+
+mysql> SELECT * FROM pets;
+
++----+-----------+
+
+| id | id_animal |
+
++----+-----------+
+
+|  1 |         1 |
+
+|  2 |         2 |
+
+|  3 |         3 |
+
+|  4 |         5 |
+
+|  5 |         7 |
+
+|  6 |         8 |
+
+|  7 |        14 |
+
+|  8 |        15 |
+
+|  9 |        16 |
+
+| 10 |        17 |
+
++----+-----------+
+
+10 rows in set (0,01 sec)
+
+
+
+mysql> SELECT * FROM pack_animals;
+
++----+-----------+
+
+| id | id_animal |
+
++----+-----------+
+
+|  1 |         4 |
+
+|  2 |         6 |
+
+|  3 |         9 |
+
+|  4 |        10 |
+
+|  5 |        11 |
+
+|  6 |        12 |
+
+|  7 |        13 |
+
+|  8 |        18 |
+
++----+-----------+
+
+8 rows in set (0,00 sec)
+
+
+
+mysql> SELECT * FROM dogs;
+
++----+--------+
+
+| id | id_pet |
+
++----+--------+
+
+|  1 |      1 |
+
+|  2 |      4 |
+
+|  3 |      6 |
+
+|  4 |      9 |
+
++----+--------+
+
+4 rows in set (0,00 sec)
+
+
+
+mysql> SELECT * FROM cats;
+
++----+--------+
+
+| id | id_pet |
+
++----+--------+
+
+|  1 |      2 |
+
+|  2 |      3 |
+
+|  3 |      5 |
+
++----+--------+
+
+3 rows in set (0,01 sec)
+
+
+
+mysql> SELECT * FROM hamsters;
+
++----+--------+
+
+| id | id_pet |
+
++----+--------+
+
+|  7 |      7 |
+
+|  8 |      8 |
+
+|  9 |     10 |
+
++----+--------+
+
+3 rows in set (0,00 sec)
+
+
+
+mysql> INSERT INTO horses (id_pack_animal) VALUES (6), (7);
+
+Query OK, 2 rows affected (0,01 sec)
+
+Records: 2  Duplicates: 0  Warnings: 0
+
+
+
+mysql> SELECT * FROM horses;
+
++----+----------------+
+
+| id | id_pack_animal |
+
++----+----------------+
+
+|  1 |              6 |
+
+|  2 |              7 |
+
++----+----------------+
+
+2 rows in set (0,00 sec)
+
+
+
+mysql> INSERT INTO camels (id_pack_animal) VALUES (1), (3), (4);
+
+Query OK, 3 rows affected (0,00 sec)
+
+Records: 3  Duplicates: 0  Warnings: 0
+
+
+
+mysql> SELECT * FROM camels;
+
++----+----------------+
+
+| id | id_pack_animal |
+
++----+----------------+
+
+|  1 |              1 |
+
+|  2 |              3 |
+
+|  3 |              4 |
+
++----+----------------+
+
+3 rows in set (0,00 sec)
+
+
+
+mysql> INSERT INTO donkeys (id_pack_animal) VALUES (2), (5), (8);
+
+Query OK, 3 rows affected (0,01 sec)
+
+Records: 3  Duplicates: 0  Warnings: 0
+
+
+
+mysql> SELECT * FROM donkeys;
+
++----+----------------+
+
+| id | id_pack_animal |
+
++----+----------------+
+
+|  1 |              2 |
+
+|  2 |              5 |
+
+|  3 |              8 |
+
++----+----------------+
+

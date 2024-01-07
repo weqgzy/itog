@@ -1,0 +1,280 @@
+user1@user1-VirtualBox:~$ sudo dpkg -i mysql-apt-config_0.8.29-1_all.deb
+
+[sudo] password for user1: 
+
+dpkg: error: cannot access archive 'mysql-apt-config_0.8.29-1_all.deb': No such file or directory
+
+user1@user1-VirtualBox:~$ sudo dpkg -i mysql-apt-config_0.8.29-1_all.deb
+
+dpkg: error: cannot access archive 'mysql-apt-config_0.8.29-1_all.deb': No such file or directory
+
+user1@user1-VirtualBox:~$ sudo dpkg -i mysql-apt-config_0.8.29-1_all.deb
+
+Selecting previously unselected package mysql-apt-config.
+
+(Reading database ... 182380 files and directories currently installed.)
+
+Preparing to unpack mysql-apt-config_0.8.29-1_all.deb ...
+
+Unpacking mysql-apt-config (0.8.29-1) ...
+
+Setting up mysql-apt-config (0.8.29-1) ...
+
+user1@user1-VirtualBox:~$ sudo apt -get update
+
+E: Command line option 'g' [from -get] is not understood in combination with the other options.
+
+user1@user1-VirtualBox:~$ sudo apt-get update
+
+Hit:1 http://ru.archive.ubuntu.com/ubuntu jammy InRelease
+
+Get:2 http://ru.archive.ubuntu.com/ubuntu jammy-updates InRelease [119 kB]
+
+Get:3 http://ru.archive.ubuntu.com/ubuntu jammy-backports InRelease [109 kB]
+
+Get:4 http://security.ubuntu.com/ubuntu jammy-security InRelease [110 kB]
+
+Get:5 http://ru.archive.ubuntu.com/ubuntu jammy-updates/main amd64 Packages [1 263 kB]
+
+Get:6 http://ru.archive.ubuntu.com/ubuntu jammy-updates/main i386 Packages [547 kB]
+
+Get:7 http://ru.archive.ubuntu.com/ubuntu jammy-updates/main Translation-en [260 kB]
+
+Get:8 http://ru.archive.ubuntu.com/ubuntu jammy-updates/main amd64 DEP-11 Metadata [101 kB]
+
+Get:9 http://ru.archive.ubuntu.com/ubuntu jammy-updates/main amd64 c-n-f Metadata [16,1 kB]
+
+Get:10 http://ru.archive.ubuntu.com/ubuntu jammy-updates/restricted i386 Packages [32,8 kB]
+
+Get:11 http://ru.archive.ubuntu.com/ubuntu jammy-updates/restricted amd64 Packages [1 250 kB]
+
+Get:12 http://ru.archive.ubuntu.com/ubuntu jammy-updates/restricted Translation-en [203 kB]
+
+Get:13 http://ru.archive.ubuntu.com/ubuntu jammy-updates/restricted amd64 c-n-f Metadata [520 B]
+
+Get:14 http://ru.archive.ubuntu.com/ubuntu jammy-updates/universe i386 Packages [675 kB]
+
+Get:15 http://ru.archive.ubuntu.com/ubuntu jammy-updates/universe amd64 Packages [1 020 kB]
+
+Get:16 http://ru.archive.ubuntu.com/ubuntu jammy-updates/universe Translation-en [226 kB]
+
+Get:17 http://ru.archive.ubuntu.com/ubuntu jammy-updates/universe amd64 DEP-11 Metadata [305 kB]
+
+Get:18 http://ru.archive.ubuntu.com/ubuntu jammy-updates/universe DEP-11 48x48 Icons [205 kB]
+
+Get:19 http://ru.archive.ubuntu.com/ubuntu jammy-updates/universe DEP-11 64x64 Icons [311 kB]
+
+Get:20 http://ru.archive.ubuntu.com/ubuntu jammy-updates/universe amd64 c-n-f Metadata [22,1 kB]
+
+Get:21 http://ru.archive.ubuntu.com/ubuntu jammy-updates/multiverse amd64 Packages [41,6 kB]
+
+Get:22 http://ru.archive.ubuntu.com/ubuntu jammy-updates/multiverse amd64 DEP-11 Metadata [940 B]
+
+Get:23 http://ru.archive.ubuntu.com/ubuntu jammy-updates/multiverse amd64 c-n-f Metadata [472 B]
+
+Get:24 http://ru.archive.ubuntu.com/ubuntu jammy-backports/main amd64 Packages [41,7 kB]
+
+Get:25 http://ru.archive.ubuntu.com/ubuntu jammy-backports/main i386 Packages [33,9 kB]
+
+Get:26 http://ru.archive.ubuntu.com/ubuntu jammy-backports/main amd64 DEP-11 Metadata [4 932 B]
+
+Get:27 http://ru.archive.ubuntu.com/ubuntu jammy-backports/main amd64 c-n-f Metadata [388 B]
+
+Get:28 http://ru.archive.ubuntu.com/ubuntu jammy-backports/universe i386 Packages [13,4 kB]
+
+Get:29 http://ru.archive.ubuntu.com/ubuntu jammy-backports/universe amd64 Packages [24,3 kB]
+
+Get:30 http://ru.archive.ubuntu.com/ubuntu jammy-backports/universe Translation-en [16,5 kB]
+
+Get:31 http://ru.archive.ubuntu.com/ubuntu jammy-backports/universe amd64 DEP-11 Metadata [18,9 kB]
+
+Get:32 http://ru.archive.ubuntu.com/ubuntu jammy-backports/universe DEP-11 64x64 Icons [25,6 kB]
+
+Get:33 http://ru.archive.ubuntu.com/ubuntu jammy-backports/universe amd64 c-n-f Metadata [644 B]
+
+Get:34 http://security.ubuntu.com/ubuntu jammy-security/main amd64 Packages [1 051 kB]
+
+Get:35 http://security.ubuntu.com/ubuntu jammy-security/main i386 Packages [383 kB]
+
+Get:36 http://security.ubuntu.com/ubuntu jammy-security/main Translation-en [200 kB]
+
+Get:37 http://security.ubuntu.com/ubuntu jammy-security/main amd64 DEP-11 Metadata [43,0 kB]
+
+Get:38 http://security.ubuntu.com/ubuntu jammy-security/main amd64 c-n-f Metadata [11,4 kB]
+
+Get:39 http://security.ubuntu.com/ubuntu jammy-security/restricted amd64 Packages [1 226 kB]
+
+Get:40 http://security.ubuntu.com/ubuntu jammy-security/restricted i386 Packages [32,4 kB]
+
+Get:41 http://security.ubuntu.com/ubuntu jammy-security/restricted Translation-en [200 kB]
+
+Get:42 http://security.ubuntu.com/ubuntu jammy-security/restricted amd64 c-n-f Metadata [520 B]
+
+Get:43 http://security.ubuntu.com/ubuntu jammy-security/universe amd64 Packages [823 kB]
+
+Get:44 http://repo.mysql.com/apt/ubuntu jammy InRelease [20,2 kB]              
+
+Get:45 http://security.ubuntu.com/ubuntu jammy-security/universe i386 Packages [580 kB]
+
+Get:46 http://security.ubuntu.com/ubuntu jammy-security/universe Translation-en [156 kB]
+
+Get:47 http://security.ubuntu.com/ubuntu jammy-security/universe amd64 DEP-11 Metadata [55,1 kB]
+
+Get:48 http://security.ubuntu.com/ubuntu jammy-security/universe DEP-11 48x48 Icons [22,0 kB]
+
+Get:49 http://security.ubuntu.com/ubuntu jammy-security/universe DEP-11 64x64 Icons [34,6 kB]
+
+Get:50 http://security.ubuntu.com/ubuntu jammy-security/universe amd64 c-n-f Metadata [16,8 kB]
+
+Get:51 http://security.ubuntu.com/ubuntu jammy-security/multiverse amd64 Packages [36,5 kB]
+
+Get:52 http://security.ubuntu.com/ubuntu jammy-security/multiverse amd64 c-n-f Metadata [260 B]
+
+Get:53 http://repo.mysql.com/apt/ubuntu jammy/mysql-8.0 Sources [963 B]
+
+Get:54 http://repo.mysql.com/apt/ubuntu jammy/mysql-apt-config amd64 Packages [566 B]
+
+Get:55 http://repo.mysql.com/apt/ubuntu jammy/mysql-apt-config i386 Packages [566 B]
+
+Get:56 http://repo.mysql.com/apt/ubuntu jammy/mysql-8.0 amd64 Packages [12,6 kB]
+
+Get:57 http://repo.mysql.com/apt/ubuntu jammy/mysql-tools i386 Packages [457 B]
+
+Get:58 http://repo.mysql.com/apt/ubuntu jammy/mysql-tools amd64 Packages [7 994 B]
+
+Fetched 11,9 MB in 3s (3 700 kB/s) 
+
+Reading package lists... Done
+
+user1@user1-VirtualBox:~$ sudo apt-get install mysql-workbench-community
+
+Reading package lists... Done
+
+Building dependency tree... Done
+
+Reading state information... Done
+
+The following additional packages will be installed:
+
+  libmysqlclient21 libpcrecpp0v5 libproj22 libzip4 mysql-common
+
+  mysql-community-client-plugins proj-data
+
+Suggested packages:
+
+  proj-bin libproj-dev
+
+The following NEW packages will be installed:
+
+  libmysqlclient21 libpcrecpp0v5 libproj22 libzip4 mysql-common
+
+  mysql-community-client-plugins mysql-workbench-community proj-data
+
+0 upgraded, 8 newly installed, 0 to remove and 149 not upgraded.
+
+Need to get 40,1 MB of archives.
+
+After this operation, 167 MB of additional disk space will be used.
+
+Do you want to continue? [Y/n] y
+
+Get:1 http://ru.archive.ubuntu.com/ubuntu jammy-updates/main amd64 libpcrecpp0v5 amd64 2:8.39-13ubuntu0.22.04.1 [16,5 kB]
+
+Get:2 http://ru.archive.ubuntu.com/ubuntu jammy/universe amd64 proj-data all 8.2.1-1 [10,0 MB]
+
+Get:3 http://ru.archive.ubuntu.com/ubuntu jammy/universe amd64 libproj22 amd64 8.2.1-1 [1 257 kB]
+
+Get:4 http://ru.archive.ubuntu.com/ubuntu jammy/universe amd64 libzip4 amd64 1.7.3-1ubuntu2 [55,0 kB]
+
+Get:5 http://repo.mysql.com/apt/ubuntu jammy/mysql-8.0 amd64 mysql-common amd64 8.0.35-1ubuntu22.04 [67,9 kB]
+
+Get:6 http://repo.mysql.com/apt/ubuntu jammy/mysql-8.0 amd64 mysql-community-client-plugins amd64 8.0.35-1ubuntu22.04 [1 443 kB]
+
+Get:7 http://repo.mysql.com/apt/ubuntu jammy/mysql-8.0 amd64 libmysqlclient21 amd64 8.0.35-1ubuntu22.04 [1 530 kB]
+
+Get:8 http://repo.mysql.com/apt/ubuntu jammy/mysql-tools amd64 mysql-workbench-community amd64 8.0.33-1ubuntu22.04 [25,7 MB]
+
+Fetched 40,1 MB in 5s (8 591 kB/s)                      
+
+Selecting previously unselected package mysql-common.
+
+(Reading database ... 182385 files and directories currently installed.)
+
+Preparing to unpack .../0-mysql-common_8.0.35-1ubuntu22.04_amd64.deb ...
+
+Unpacking mysql-common (8.0.35-1ubuntu22.04) ...
+
+Selecting previously unselected package mysql-community-client-plugins.
+
+Preparing to unpack .../1-mysql-community-client-plugins_8.0.35-1ubuntu22.04_amd64.deb ...
+
+Unpacking mysql-community-client-plugins (8.0.35-1ubuntu22.04) ...
+
+Selecting previously unselected package libmysqlclient21:amd64.
+
+Preparing to unpack .../2-libmysqlclient21_8.0.35-1ubuntu22.04_amd64.deb ...
+
+Unpacking libmysqlclient21:amd64 (8.0.35-1ubuntu22.04) ...
+
+Selecting previously unselected package libpcrecpp0v5:amd64.
+
+Preparing to unpack .../3-libpcrecpp0v5_2%3a8.39-13ubuntu0.22.04.1_amd64.deb ...
+
+Unpacking libpcrecpp0v5:amd64 (2:8.39-13ubuntu0.22.04.1) ...
+
+Selecting previously unselected package proj-data.
+
+Preparing to unpack .../4-proj-data_8.2.1-1_all.deb ...
+
+Unpacking proj-data (8.2.1-1) ...
+
+Selecting previously unselected package libproj22:amd64.
+
+Preparing to unpack .../5-libproj22_8.2.1-1_amd64.deb ...
+
+Unpacking libproj22:amd64 (8.2.1-1) ...
+
+Selecting previously unselected package libzip4:amd64.
+
+Preparing to unpack .../6-libzip4_1.7.3-1ubuntu2_amd64.deb ...
+
+Unpacking libzip4:amd64 (1.7.3-1ubuntu2) ...
+
+Selecting previously unselected package mysql-workbench-community.
+
+Preparing to unpack .../7-mysql-workbench-community_8.0.33-1ubuntu22.04_amd64.deb ...
+
+Unpacking mysql-workbench-community (8.0.33-1ubuntu22.04) ...
+
+Setting up libpcrecpp0v5:amd64 (2:8.39-13ubuntu0.22.04.1) ...
+
+Setting up mysql-common (8.0.35-1ubuntu22.04) ...
+
+update-alternatives: using /etc/mysql/my.cnf.fallback to provide /etc/mysql/my.cnf (my.cnf) in auto mode
+
+Setting up proj-data (8.2.1-1) ...
+
+Setting up libzip4:amd64 (1.7.3-1ubuntu2) ...
+
+Setting up libproj22:amd64 (8.2.1-1) ...
+
+Setting up mysql-community-client-plugins (8.0.35-1ubuntu22.04) ...
+
+Setting up libmysqlclient21:amd64 (8.0.35-1ubuntu22.04) ...
+
+Setting up mysql-workbench-community (8.0.33-1ubuntu22.04) ...
+
+Processing triggers for hicolor-icon-theme (0.17-2) ...
+
+Processing triggers for gnome-menus (3.36.0-1ubuntu3) ...
+
+Processing triggers for libc-bin (2.35-0ubuntu3.1) ...
+
+Processing triggers for shared-mime-info (2.1-2) ...
+
+Processing triggers for mailcap (3.70+nmu1ubuntu1) ...
+
+Processing triggers for desktop-file-utils (0.26-1ubuntu3) ...
+
+user1@user1-VirtualBox:~$ ^C
+

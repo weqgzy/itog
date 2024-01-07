@@ -1,0 +1,3 @@
+user1@user1-VirtualBox:~$ mkdir directory
+user1@user1-VirtualBox:~$ mv human_friends directory/
+

@@ -1,0 +1,110 @@
+mysql> USE human_friends;
+
+Database changed
+
+mysql> CREATE TABLE animals (id INT PRIMARY KEY AUTO_INCREMENT, name VARCHAR(255) NOT NULL, birthday DATE NOT NULL);    -> 
+
+    -> 
+
+    -> ^C
+
+mysql> CREATE TABLE animals (id INT PRIMARY KEY AUTO_INCREMENT, name VARCHAR(255) NOT NULL, birthday DATE NOT NULL);
+
+Query OK, 0 rows affected (0,01 sec)
+
+
+
+mysql> CREATE TABLE commands (id INT PRIMARY KEY AUTO_INCREMENT, id_animal INT NOT NULL, command VARCHAR(80), FOREIGN KEY (id_animal) REFERENCES animals (id));
+
+Query OK, 0 rows affected (0,02 sec)
+
+
+
+mysql> CREATE TABLE pets (id INT PRIMARY KEY AUTO_INCREMENT, id_animal INT NOT NULL, FOREIGN KEY (id_animal) REFERENCES animals (id));
+
+Query OK, 0 rows affected (0,03 sec)
+
+
+
+mysql> CREATE TABLE dogs (id INT PRIMARY KEY AUTO_INCREMENT, id_pet INT NOT NULL, FOREIGN KEY (id_pet) REFERENCES pets (id));
+
+Query OK, 0 rows affected (0,02 sec)
+
+
+
+mysql> CREATE TABLE cats (id INT PRIMARY KEY AUTO_INCREMENT, id_pet INT NOT NULL, FOREIGN KEY (id_pet) REFERENCES pets (id));
+
+Query OK, 0 rows affected (0,03 sec)
+
+
+
+mysql> CREATE TABLE hamsters (id INT PRIMARY KEY AUTO_INCREMENT, id_pet INT NOT NULL, FOREIGN KEY (id_pet) REFERENCES pets (id));
+
+Query OK, 0 rows affected (0,02 sec)
+
+
+
+mysql> CREATE TABLE pack_animals (id INT PRIMARY KEY AUTO_INCREMENT, id_animal INT NOT NULL, FOREIGN KEY (id_animal) REFERENCES animals (id));
+
+Query OK, 0 rows affected (0,03 sec)
+
+
+
+mysql> CREATE TABLE horses (id INT PRIMARY KEY AUTO_INCREMENT, id_pack_animal INT NOT NULL, FOREIGN KEY (id_pack_animal) REFERENCES pack_animals (id));
+
+Query OK, 0 rows affected (0,04 sec)
+
+
+
+mysql> v
+
+    -> CREATE TABLE camels (id INT PRIMARY KEY AUTO_INCREMENT, id_pack_animal INT NOT NULL, FOREIGN KEY (id_pack_animal) REFERENCES pack_animals (id));
+
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'v
+
+CREATE TABLE camels (id INT PRIMARY KEY AUTO_INCREMENT, id_pack_animal INT NOT' at line 1
+
+mysql> CREATE TABLE camels (id INT PRIMARY KEY AUTO_INCREMENT, id_pack_animal INT NOT NULL, FOREIGN KEY (id_pack_animal) REFERENCES pack_animals (id));
+
+Query OK, 0 rows affected (0,02 sec)
+
+
+
+mysql> CREATE TABLE donkeys (id INT PRIMARY KEY AUTO_INCREMENT, id_pack_animal INT NOT NULL, FOREIGN KEY (id_pack_animal) REFERENCES pack_animals (id));
+
+Query OK, 0 rows affected (0,02 sec)
+
+
+
+mysql> SHOW TABLES;
+
++-------------------------+
+
+| Tables_in_human_friends |
+
++-------------------------+
+
+| animals                 |
+
+| camels                  |
+
+| cats                    |
+
+| commands                |
+
+| dogs                    |
+
+| donkeys                 |
+
+| hamsters                |
+
+| horses                  |
+
+| pack_animals            |
+
+| pets                    |
+
++-------------------------+
+
+10 rows in set (0,00 sec)
+

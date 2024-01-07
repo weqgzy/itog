@@ -1,0 +1,287 @@
+    1  reboot
+
+    2  sudo apt update
+
+    3  sudo apt install openssh-server -y
+
+    4  sudo systemctl start ssh
+
+    5  sudo systemctl status ssh
+
+    6  sudo systemctl enable ssh
+
+    7  ip a
+
+    8  hostname -I
+
+    9  history
+
+   10  sudo apt update
+
+   11  sudo apt install mc
+
+   12  mc
+
+   13  uname -a
+
+   14  history
+
+   15  pwd
+
+   16  cd ..
+
+   17  pwd
+
+   18  mv /user1
+
+   19  mv user1/
+
+   20  cd ~
+
+   21  pwd
+
+   22  cd ..
+
+   23  pwd
+
+   24  cd /home
+
+   25  pwd
+
+   26  cd /user1
+
+   27  pwd
+
+   28  ls
+
+   29  cd user1
+
+   30  pwd
+
+   31  ls
+
+   32  mkdir students
+
+   33  mkdir mentors
+
+   34  clear
+
+   35  pwd
+
+   36  ls
+
+   37  tree
+
+   38  sudo apt install tree
+
+   39  clear
+
+   40  tree
+
+   41  ls
+
+   42  pwd
+
+   43  cd students
+
+   44  pwd
+
+   45  tree
+
+   46  cd ..
+
+   47  tree
+
+   48  cd students
+
+   49  cd /students
+
+   50  cd user1
+
+   51  pwd
+
+   52  ls
+
+   53  cd /home
+
+   54  cd /user1/students
+
+   55  tree
+
+   56  cd /user1/students
+
+   57  cd /user1
+
+   58  clear
+
+   59  cd /user1/students/
+
+   60  pwd
+
+   61  cd /home/user1/students/
+
+   62  pwd
+
+   63  clear
+
+   64  touch students_list.txt
+
+   65  cd /home/user1/mentors/
+
+   66  touch mentors_list.txt
+
+   67  cd ~
+
+   68  tree
+
+   69  nano mentors.txt
+
+   70  cd ~
+
+   71  mv mentors.txt students
+
+   72  tree
+
+   73  clear
+
+   74  rm mentors.txt
+
+   75  mv mentors_list.txt students
+
+   76  cd mentors
+
+   77  mv mentors_list.txt students
+
+   78  tree
+
+   79  cd ..
+
+   80  tree
+
+   81  rm mentors
+
+   82  rm -r mentors
+
+   83  tree
+
+   84  clear
+
+   85  cd students
+
+   86  nano mentors_list.txt
+
+   87  nano sutdents_list.txt
+
+   88  tree
+
+   89  cd ~
+
+   90  tree
+
+   91  vim /students/mentors.txt
+
+   92  cd students
+
+   93  vim mentors.txt
+
+   94  sudo apt install vim
+
+   95  vim mentors.txt
+
+   96  clear
+
+   97  cd 
+
+   98  mv students srudents_and_mentors
+
+   99  tree
+
+  100  rm -r students_and_mentors
+
+  101  pwd
+
+  102  rm -r /students_and_mentors
+
+  103  cd students_and_mentors
+
+  104  tree
+
+  105  clear
+
+  106  rm -r srudents_and_mentors
+
+  107  tree
+
+  108  clear
+
+  109  history
+
+  110  cat > pets
+
+  111  cat > home_animals
+
+  112  cat > pack_animals
+
+  113  cat home_animals pack_animals > animals
+
+  114  cat animals
+
+  115  cat > pets
+
+  116  cat > pack
+
+  117  cat > pets pack > new
+
+  118  mv new human_friends]
+
+  119  mv human_friend] human_friends
+
+  120  mv human_friends] human_friends
+
+  121  cat human_friends
+
+  122  cat > pets
+
+  123  cat > pack
+
+  124  cat pets pack > new
+
+  125  cat new
+
+  126  mv new human_friends
+
+  127  cat human_friends
+
+  128  mkdir directory
+
+  129  mv human_friends directory/
+
+  130  sudo dpkg -i mysql-apt-config_0.8.29-1_all.deb
+
+  131  sudo passwd
+
+  132  sudo dpkg -i mysql-apt-config_0.8.29-1_all.deb
+
+  133  sudo
+
+  134  sudo pssword
+
+  135  reset
+
+  136  sudo dpkg -i mysql-apt-config_0.8.29-1_all.deb
+
+  137  sudo apt -get update
+
+  138  sudo apt-get update
+
+  139  sudo apt-get install mysql-workbench-community
+
+  140  sudo dpkg -i geany_1.38-1+b1_amd64.deb
+
+  141  sudo apt -f install
+
+  142  sudo dpkg -r geany
+
+  143  sudo apt autoremove
+
+  144  history > 5.txt
